@@ -15,18 +15,19 @@
     <nav class="navbar navbar-inverse navbar-custom navbar-fixed-top" >
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
+      <button type="button" class="navbar-toggle btntoggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar icontoggle"></span>
+        <span class="icon-bar icontoggle"></span>
+        <span class="icon-bar icontoggle"></span>                        
       </button>
       <a class="navbar-brand logo" href="#"></a>
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
+    <div class="row">
+    <div class="collapse navbar-collapse fixedmenu col-sm-9 col-xs-12" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li alink><a href="#">HOME</a></li>
+        <li><a href="#" style="color: #414141;">HOME</a></li>
         <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">MEN</a>
+          <a class="dropdown-toggle menbac" data-toggle="dropdown" href="#" style="color: #414141;">MEN</a>
           <ul class="dropdown-menu submenu">
             <li>Jeans</li>
             <li>T-shirt</li>
@@ -36,17 +37,22 @@
             <li>Night Wear</li>
           </ul>
         </li>
-        <li><a href="#">WOMEN</a></li>
-        <li><a href="#">KIDS</a></li>
-        <li><a href="#">ACCESSORIES</a></li>
+        <li><a href="#" style="color: #414141;">WOMEN</a></li>
+        <li><a href="#" style="color: #414141;">KIDS</a></li>
+        <li><a href="#" style="color: #414141;">ACCESSORIES</a></li>
 
       </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Login</a></li>
-        <li><a href="#" class="cart"></a></li>
-        <li><a href="#" class="search"></a></li>
+    </div>
+    <div class="col-sm-3 col-xs-12 nav navbar-nav navbar-right rightnav">
+       <ul class="nav navbar-nav navbar-right">
+        <li><a href="#" style="color: #ea4748;" class="rightnavlogin">Login</a></li>
+        <li><div class="seprator"></div></li>
+        <li class="cart"><a href="#"></a></li>
+       <li><div class="seprator"></div></li>
+        <li><a href="#" class="bordera"><div class="search"></div></a></li>
       </ul>
     </div>
+  </div>
   </div>
 </nav>
 
@@ -97,24 +103,29 @@
       
   </div>
   <div class="row">
-    <div class="col-sm-12">
+    <div class="col-sm-12 trending">
     <h1>Trending Products</h1>
   </div>
   </div>
   <div class="row">
     <div class="col-sm-3">
-      <div class="thumbnail addtocart">
+      <div class="thumbnail container1">
         <a href="#">
+          <div class="colorblack">
       <img src="images/new-thumb-01.jpg" class="img-responsive">
-        <div class="text">
+         <div class="middle row">
+          <div><button type="button" class="btn btn-default center-block btn1">Add to cart</button></div></div>
+            <div class="text">
         <p>U.S Polo Assn.Full Sleve Plain T-Shirt for Men</p>
         <h3>$120</h3>
         </div>
         </a>
+      
+          </div>
       </div>
     </div>
     <div class="col-sm-3">
-      <div class="thumbnail">
+      <div class="thumbnail container1">
         <a href="#">
       <img src="images/new-thumb-02.jpg" class="img-responsive">
         <div class="text">
@@ -122,21 +133,27 @@
         <h3>$120</h3>
         </div>
         </a>
+          <div class="middle row">
+          <div><button type="button" class="btn btn-default btn1">Add to cart</button></div>
+          </div>
       </div>
     </div>
     <div class="col-sm-3">
-      <div class="thumbnail">
+      <div class="thumbnail container1">
         <a href="#">
-      <img src="images/new-thumb-03.jpg" class="img-responsive">
+        <img src="images/new-thumb-03.jpg" class="img-responsive">
         <div class="text">
         <p>U.S Polo Assn.Full Sleve Plain T-Shirt for Men</p>
         <h3>$120</h3>
         </div>
         </a>
+          <div class="middle row">
+          <div><button type="button" class="btn btn-default btn1">Add to cart</button></div>
+          </div>
       </div>
     </div>
     <div class="col-sm-3">
-      <div class="thumbnail">
+      <div class="thumbnail container1">
         <a href="#">
       <img src="images/new-thumb-04.jpg" class="img-responsive">
         <div class="text">
@@ -144,6 +161,9 @@
         <h3>$120</h3>
         </div>
         </a>
+          <div class="middle row">
+          <div><button type="button" class="btn btn-default btn1">Add to cart</button></div>
+          </div>
       </div>
     </div>
       
@@ -151,7 +171,7 @@
   <div class="row">
     
     <div class="col-sm-3">
-      <div class="thumbnail">
+      <div class="thumbnail container1">
         <a href="#">
       <img src="images/new-thumb-05.jpg" class="img-responsive">
         <div class="text">
@@ -159,10 +179,13 @@
         <h3>$120</h3>
         </div>
         </a>
+          <div class="middle row">
+          <div><button type="button" class="btn btn-default btn1">Add to cart</button></div>
+          </div>
       </div>
     </div>
     <div class="col-sm-3">
-      <div class="thumbnail">
+      <div class="thumbnail container1">
         <a href="#">
       <img src="images/new-thumb-06.jpg" class="img-responsive">
         <div class="text">
@@ -170,10 +193,13 @@
         <h3>$120</h3>
         </div>
         </a>
+          <div class="middle row">
+          <div><button type="button" class="btn btn-default btn1">Add to cart</button></div>
+          </div>
       </div>
     </div>
     <div class="col-sm-3">
-      <div class="thumbnail">
+      <div class="thumbnail container1">
         <a href="#">
       <img src="images/new-thumb-07.jpg" class="img-responsive">
         <div class="text">
@@ -181,10 +207,13 @@
         <h3>$120</h3>
         </div>
         </a>
+          <div class="middle row">
+          <div><button type="button" class="btn btn-default btn1">Add to cart</button></div>
+          </div>
       </div>
     </div>
     <div class="col-sm-3">
-      <div class="thumbnail">
+      <div class="thumbnail container1">
         <a href="#">
       <img src="images/new-thumb-08.jpg" class="img-responsive">
         <div class="text">
@@ -192,6 +221,9 @@
         <h3>$120</h3>
         </div>
         </a>
+          <div class="middle row">
+          <div><button type="button" class="btn btn-default btn1">Add to cart</button></div>
+          </div>
       </div>
     </div>
       
@@ -204,7 +236,11 @@
 </div>
 <div class="container-fluid banner2">
   <div class="row">
-  <img src="images/px.jpg" class="img-responsive banner">  
+  <img src="images/px.jpg" class="img-responsive banner"> 
+  <div class="latestfashion">
+  <p><strong>GET THE</strong> LATEST<br><strong>WOMEN</strong> FASHION</p>
+  <button type="button" class="btn btn-default">Get Exclusive Collection For Women</button>
+  </div>
 </div>
 </div>
 <footer class="footer container-fluid" >
@@ -215,14 +251,14 @@
     <label for="email">Subscribe for Newslater</label>
     <input type="email" size="35" class="form-control" id="email" placeholder="Enter your email address">
   </div>
-  <button type="submit" class="btn btn-primary">SIGN UP</button>
+  <button type="submit" class="btn btn-default">SIGN UP</button>
 </form> 
 </div>
 </div>
 <div class="row">
   <div class="col-sm-12">
   <ul class="container">
-      <li>HOME</li>
+      <li>Home</li>
       <li>About us</li>
       <li>Register</li>
       <li>Contact us</li>
