@@ -127,7 +127,7 @@ ul.nav a:active {color: #ea4748 !important; }
 	margin-top: 14px;
 	padding-right: 2px;
 	height: 25px;
-	padding-left: 5px;
+	padding-left: 2px;
 }
 li.cart:hover, li.cart a:hover{
 
@@ -462,7 +462,7 @@ hr{
 .contact{
 	position: absolute;
 	top:10%;
-	left:7%;
+	left:06%;
 	z-index:1;
 }
 
@@ -530,7 +530,6 @@ ol{
 }
 
 
-
 @media screen and (max-width: 991px)
 {
 	.latestfashion{
@@ -560,6 +559,15 @@ ol{
 	width:370px;
 	height:250px;
 	}
+	.rightnav{
+	text-align: center;
+}
+.rightnav ul li{
+	display: inline-block;
+
+}
+	
+
 }
 @media screen and (max-width: 767px)
 {
@@ -596,24 +604,15 @@ ol{
 .fixedmenu a:link{
 	font-color:#fff;
 }
-.rightnav {
-	margin:auto;
-	width:300px;
+.rightnav{
+	text-align: center;
 }
-.rightnav li{
-	float: left;
+.rightnav ul li{
+	display: inline-block;
 
 }
-.rightnav ul{
-	overflow: hidden;
-	margin:auto;
-}
-.rightnav li a{
-	display: inline-block;
-}
-.rightnavlogin{
-	margin-top: 5px;
-}
+
+
 .search {
 	background: url('../images/search.svg') no-repeat;
 	 
@@ -667,31 +666,16 @@ ol{
 	.banner{
 		margin-top:49px !important;
 	}
-	.rightnav {
-		margin:auto;
-		padding-left:62px;
-		width:300px;
-	}
-	.rightnav li{
-		float: left;
-		width:50px;
 
-	}
-	.rightnav ul{
-		overflow: hidden;
-		margin:auto;
-	}
-	.rightnav li a{
-		display: inline-block;
-	}
+
 	.search {
 		background: url('../images/search.svg') no-repeat ;
-		margin-top: -8px;	
+			
 		
 		background-size:25px 25px;
 		height: 30px;
 		width:30px;
-		margin-left: -13px;
+		
 	} 
 	.bordera{
 		border:1px solid;
@@ -703,28 +687,74 @@ ol{
 	li.cart:hover, li.cart a:hover{
 		background-color: #ea4748;
 	 }
-	.cart a{
-		background: url('../images/sprite.png') no-repeat -1px -62px;
-		width: 36px;
-		height: 36px;
-		margin-top: 7px;
-		display: block;
-		margin-left: 7px;
-	}
-	.cart a:hover{
-		background: url('../images/sprite.png') no-repeat -223px -62px;
-		width: 36px;
-		height: 36px;
-		margin-top: 7px;	
-	}
+	li.cart:hover, li.cart a:hover{
+
+	background-color: #ea4748;
+	margin-top: 8px;
+	height: 33px;
+	width: 30px;
+	
+	 }
+.cart a{
+	background: url('../images/sprite.png') no-repeat -5px -60px;;
+	width: 30px;
+	height: 33px;
+	
+	display: block;
+	
+	
+	
+
+}
+.cart a:hover{
+	background: url('../images/sprite.png') no-repeat  -225px -68px;
+	width: 30px;
+	height: 30px;
+		
+}
+
 	.map{
 		width:290px;
 		height: auto;
 	}
+	.rightnav{
+	text-align: center;
+}
+.rightnav ul li{
+	display: inline-block;
+
+}
+.parent{
+	position: relative;
+}
+.usrname{
+	position: absolute;
+	z-index: 1;
+	top:0;
+
+}
 	
 }
 
 @media screen and (max-width: 320px)
 {
 	.banner{margin-top: 49px!important}
+
+.rightnav{
+	text-align: center;
+}
+.rightnav ul li{
+	display: inline-block;
+	font-size: 12px;
+
+}
+.parent{
+	position: relative;
+}
+.usrname{
+	position: absolute;
+	z-index: 1;
+	top:0;
+}
+
 }
