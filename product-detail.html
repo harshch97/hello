@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Product Detail</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+  </head>
+  <body onload="qtychangeprice()">
+        <header class="container-fluid">
+    <nav class="navbar navbar-inverse navbar-custom navbar-fixed-top" >
+  <div class="container">
+    <div class="row">
+    <div class="navbar-header">
+      <div class="col-sm-1">
+        <a class="navbar-brand logo" href="#"></a>
+     
+      <button type="button" class="navbar-toggle btntoggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar icontoggle"></span>
+        <span class="icon-bar icontoggle"></span>
+        <span class="icon-bar icontoggle"></span>                        
+      </button>
+    </div>
+     </div>
+    
+      
+    <div class="collapse navbar-collapse fixedmenu col-sm-5 col-xs-12" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="#" style="color: #414141;">HOME</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle menbac" data-toggle="dropdown" href="#" style="color: #414141;">MEN</a>
+          <ul class="dropdown-menu submenu">
+            <li>Jeans</li>
+            <li>T-shirt</li>
+            <li>Shirt</li>
+            <li>Chinos</li>
+            <li>Blazers</li>
+            <li>Night Wear</li>
+          </ul>
+        </li>
+        <li><a href="#" style="color: #414141;">WOMEN</a></li>
+        <li><a href="#" style="color: #414141;">KIDS</a></li>
+        <li><a href="#" style="color: #414141;">ACCESSORIES</a></li>
+
+      </ul>
+    </div>
+    <div class="col-sm-6 col-xs-12 rightnav pull-right">
+        <ul class="nav navbar-nav navbar-right">
+        <li><a href="#" style="color: #ea4748;">Login</a></li>
+        <li><div class="seprator"></div></li>
+        <li class="cart"><a href="#"></a></li>
+       <li><div class="seprator"></div></li>
+        <li><div class="box">
+           <input class="searchtext" type="search" placeholder="Search" />
+           </div>
+           <div class="icon">
+          <a href="#"><div class="search"></div></a></div></li>
+      </ul>
+    </div>
+  </div>
+  </div>
+</nav>
+</header>
+<div class="container-fluid banner">
+    <div class="row">
+      <img src="images/inner-banner.jpg" class="img-responsive banner">  
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 contact">
+        <h2>Men</h2>
+        </div>
+      </div>
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="row cart-bred">
+    <ul class="breadcrumb container">
+      <li class="breadcolor"><a href="#">Home</a></li>
+      <li class="breadcolor"><a href="#">Men</a></li>
+      <li class="breadcolor"><a href="">T-shirt</a></li>
+      <li><a href="" class="colorbr">U.S. Polo Assn. Full Sleeve Plain T-Shirts for Men</a></li>
+    </ul>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="alert alert-success alert-dismissable container collapse" id="Wishlist">
+      <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+      <span><svg width="16" height="16">
+    <image xlink:href="images/success.svg" width="16" height="16"/>
+</svg></span>U.S Polo Assn.Full Sleve Plain T-Shirt for Men has been added to your wishlist.
+  </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-5">
+      <img src="images/new-thumb-01-big.jpg" class="img-responsive">
+      <div class="row">
+        <div class="col-sm-12">
+          <img src="images/img01.jpg" class="img-responsive">
+        </div> 
+      </div>
+    </div>
+    <div class="col-sm-7">
+      <h1>U.S Polo Assn.Full Sleve Plain T-Shirt for Men</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+      <p>SKU:<strong> mag209_prod1</strong></p>
+      <div class="avail">
+        <p>Availability:</p>
+        <p class="instock">In stock</p>
+        <p class="available">Not Available</p>
+      </div>
+      <div class="clearfix">
+        <h4 class="color" id="price">$120.00</h4>
+      </div>
+      <div class="clearfix">
+      <p><span class="color">*</span>size</p>
+      <p class="color required">*Required Fields</p>
+    </div>
+     <div class="form-group clearfix">
+
+      <select class="form-control" id="sel1">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+    </div> 
+    <div class="form-group form-inline">
+         <label for="sel1">Qty:</label>
+    <select class="form-control" id="qty" onchange="qtychangeprice()">
+       <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+      <button type="button" class="btn btn-default buttoncart" onclick="addtocart()"><div class="addtocart"></div><div class="added">Add to Cart</div></button>
+    </div>
+
+    <div>
+      <a href="#Wishlist" data-toggle="collapse" class="color">Add to Wishlist</a>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 reviews1">
+   <ul class="nav nav-tabs">
+    <li class="active">
+      <a data-toggle="tab" href="#Delivery">Delivery</a>
+    </li>
+    <li>
+      <a data-toggle="tab" href="#Shipping">Shipping</a>
+    </li>
+    <li>
+      <a data-toggle="tab" href="#Sizeguide">Sizeguide</a>
+    </li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div id="Delivery" class="tab-pane active"><br>
+      
+      <p>We offer the followig delivery option for 24c ours the world. Delivries are not made on Saturdays,Sundays or on public folidays. A specific time slot cannot be specified with any of our delivery options.Please refer to the Terms and Conditions of Sale.</p>
+    </div>
+    <div id="Shipping" class= "tab-pane fade"><br>
+     
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    <div id="Sizeguide" class="tab-pane fade table-responsive tablepad"><br>
+                
+  <table class="table tableborder1">
+    <thead>
+      <tr>
+        <th>Size</th>
+        <th>S</th>
+        <th>M</th>
+        <th>L</th>
+        <th>XL</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Men</td>
+        <td>7-10</td>
+        <td>10-13</td>
+        <td>13-15</td>
+        <td>15-17</td>
+      </tr>
+       <tr>
+        <td>Women</td>
+        <td>7-9</td>
+        <td>10-12</td>
+        <td>13-14</td>
+        <td>15-16</td>
+      </tr>
+    </tbody>
+  </table>
+  
+    </div>
+  </div>
+  </div>
+  </div>
+      
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 reviews">
+      <ul class="nav nav-tabs">
+    <li class="active">
+      <a data-toggle="tab" href="#Product-description">Product Description</a>
+    </li>
+    <li>
+      <a data-toggle="tab" href="#Product-Review">Product's Review</a>
+    </li>
+    <li>
+      <a data-toggle="tab" href="#cms-tab">CMS tab</a>
+    </li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div id="Product-description" class="tab-pane active"><br>
+      <h4>Sample Lorem ipsum Text</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>  
+    </div>
+    <div id="Product-Review" class= "tab-pane fade hrreview">
+     
+     <button type="button" class="btn btn-link color" data-toggle="collapse" data-target="#rating" style="padding-left: 0px;">Write a Review</button>
+     <hr style="border: #ededed 1px solid;
+      margin: 5px 5px 5px 5px;
+      ">
+      <div id="rating" class="collapse">
+    <div  class="row">
+        <div class="col-sm-12 col-xs-12">
+          <div class="rate">
+          </div>
+          <div class="rate">
+          </div>
+          <div class="rate">
+          </div>
+          <div class="rate">
+          </div>
+          <div class="rate">
+          </div>
+        </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-xs-12">
+        <form action="#">
+         <div class="form-group">
+          <textarea class="form-control" rows="5" id="comment" placeholder="Write a review"></textarea>
+        </div> 
+        <div class="form-group">
+          <button type="submit" class="btn btn-default btn1">Submit</button>
+        </div>
+      </form>
+      </div>
+    </div>
+    </div>
+      <p><strong>Vishuddhi,26-12-2016 writes:</strong></p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+      
+    </div>
+    <div id="cms-tab" class="tab-pane fade"><br>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>         
+ 
+  </div>
+  </div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer container-fluid" >
+  <div class="row">
+    <div class="col-sm-12 form">
+   <form class="form-inline container form" action="#">
+  <div class="form-group">
+    <label for="email">Subscribe for Newslater</label>
+    <input type="email" size="35" class="form-control" id="email" placeholder="Enter your email address">
+  </div>
+  <button type="submit" class="btn btn-default">SIGN UP</button>
+</form> 
+</div>
+</div>
+<div class="row">
+  <div class="col-sm-12">
+  <ul class="container">
+      <li>Home</li>
+      <li>About us</li>
+      <li>Register</li>
+      <li>Contact us</li>
+  </ul>
+    
+    
+  </div>
+</div>
+<hr>
+<div class="row">
+  <div class="col-sm-12 copy">
+    <p>&copy 2018 eShopper online store.All right reserved.</p>
+  </div> 
+</div>
+</footer>
+
+
+   
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html

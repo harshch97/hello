@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cart</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body onload="return checkout()">
+    <header class="container-fluid">
+    <nav class="navbar navbar-inverse navbar-custom navbar-fixed-top" >
+  <div class="container">
+    <div class="row parent">
+    <div class="navbar-header parent">
+      <div class="col-sm-1">
+        <a class="navbar-brand logo" href="#"></a>
+     
+      <button type="button" class="navbar-toggle btntoggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar icontoggle"></span>
+        <span class="icon-bar icontoggle"></span>
+        <span class="icon-bar icontoggle"></span>                        
+      </button>
+    </div>
+     </div>
+    
+      
+    <div class="collapse navbar-collapse fixedmenu col-sm-5 col-xs-12" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="#" style="color: #414141;">HOME</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle menbac" data-toggle="dropdown" href="#" style="color: #414141;">MEN</a>
+          <ul class="dropdown-menu submenu">
+            <a href="#"><li>Jeans</li></a>
+            <a href="#"><li>T-shirt</li></a>
+            <a href="#"><li>Shirt</li></a>
+            <a href="#"><li>Chinos</li></a>
+            <a href="#"><li>Blazers</li></a>
+            <a href="#"><li>Night Wear</li></a>
+          </ul>
+        </li>
+        <li><a href="#" style="color: #414141;">WOMEN</a></li>
+        <li><a href="#" style="color: #414141;">KIDS</a></li>
+        <li><a href="#" style="color: #414141;">ACCESSORIES</a></li>
+
+      </ul>
+    </div>
+    <div class="col-sm-6 col-xs-12 rightnav pull-right">
+        <ul class="nav navbar-nav navbar-right">
+        <li><div class="username">Welcome,Vishudhi</div></li>
+        <li><div class="seprator hide-small"></div></li>
+
+        <li><a href="#" style="color: #414141;" >Profile</a></li>
+        <li><div class="seprator"></div></li>
+        <li><a href="#" style="color: #ea4748;" class="rightnavlogin">Logout</a></li>
+        <li><div class="seprator"></div></li>
+        <li class="cart"><a href="#"></a></li>
+       <li><div class="seprator"></div></li>
+        <li><div class="box">
+           <input class="searchtext" type="search" placeholder="Search" />
+           </div>
+           <div class="icon">
+          <a href="#"><div class="search"></div></a></div></li>
+      </ul>
+    </div>
+  </div>
+  </div>
+</nav>
+</header>
+<div class="container-fluid banner">
+    <div class="row">
+      <img src="images/inner-banner.jpg" class="img-responsive banner">  
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="row cart-bred">
+    <ul class="breadcrumb container">
+      <li class="breadcolor"><a href="#">Home</a></li>
+      <li><a href="#" class="colorbr">Shoping Cart</a></li>
+    </ul>
+  </div>
+</div>
+<div class="container">
+<div class="row ">
+  <div class="col-sm-12"> 
+  <div class="alert alert-success alert-dismissable">
+      <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+      <span><svg width="16" height="16">
+    <image xlink:href="images/success.svg" width="16" height="16"/>
+</svg></span>U.S Polo Assn.Full Sleve Plain T-Shirt for Men Was added to your shoping cart
+  </div>
+</div>
+</div>
+<div class="row">
+  <div class="col-sm-12">
+  <div class="alert alert-info alert-dismissable ">
+      <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+      <span><svg width="16" height="16">
+    <image xlink:href="images/info.svg" width="16" height="16"/>
+</svg></span>U.S Polo Assn.Full Sleve Plain T-Shirt for Men Was added to your shoping cart
+  </div>
+</div>
+</div>
+<div class="row">
+  <div class="col-sm-12">
+  <div class="alert alert-warning alert-dismissable ">
+      <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        <span><svg width="16" height="16">
+    <image xlink:href="images/warning.svg" width="16" height="16"/>
+</svg></span>U.S Polo Assn.Full Sleve Plain T-Shirt for Men Was added to your shoping cart
+  </div>
+</div>
+</div>
+<div class="row">
+  <div class="col-sm-12">
+  <div class="alert alert-danger alert-dismissable ">
+      <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        <span><svg width="16" height="16">
+    <image xlink:href="images/error.svg" width="16" height="16"/>
+</svg></span>U.S Polo Assn.Full Sleve Plain T-Shirt for Men Was added to your shoping cart
+  </div>
+</div>
+</div>
+<div class="row">  
+  <div class="col-sm-12 table-responsive">        
+    <table class="table tableborder">
+      <thead class="tablefhback">
+          <tr>
+            <th></th>
+            <th>Product Name</th>
+            <th></th>
+            <th>Unit Price</th>
+            <th>Qty</th>
+            <th>Subtotal</th>
+            <th></th>
+            </tr>
+      </thead>
+      <tbody>
+          <tr>
+            <td>
+                  <div><img src="images/cart-img01.jpg"></div>
+            </td>
+            <td> 
+              
+                  <p>U.S Polo Assn.Full Sleve Plain T-Shirt for Men<br>
+                  <strong>Color</strong><br>Blue<br>
+                  <strong>Size</strong><br>M</p>
+            </td> 
+            <td><div class="edit"></div></td>
+            <td><p class="price" id="price1">$120.00</p></td>
+            <td><input type="text" id="qty1" value="1" class="text1cart"></td>
+            <td><p class="price" id="subtotal1">$120.00</p></td>
+            <td><div class="delete"></div></td>
+          </tr>
+           
+          <tr class="tablefhback bordertfotter">
+            <td colspan="2"><button type="button" class="btn btn-default btn2cart"">Continue Shoping</button></td>
+            <td colspan="5" class="shoping-cart"><button type="button" class="btn btn-default btn2cart">Clear Shoping Cart</button>
+           <button type="button" class="btn btn-default btn2cart">Update Shoping cart</button></td>
+          </tr>
+      </tbody>
+    </table>
+  </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-5">
+    <form action="" class="cartform"> 
+         <h3 class="estimate">Estimate Shipping and Tax</h3>
+      <h5 class="destination">Enter your destination to get a shipping estimate.</h5>
+      
+    <div class="form-group">
+      <label>Country</label>
+      <select class="form-control" id="Country">
+        <option>India</option>
+        <option>USA</option>
+        <option>UK</option>
+        <option>UAE</option>
+        </select>
+    </div>
+    <div class="form-group">
+      <label>State/Province</label>
+      <input type="text" class="form-control" id="State" placeholder="State/Province" name="State">
+    </div>
+    <div class="form-group bottom">
+      <label>Zip/Postal Code</label>
+      <input type="text" class="form-control" id="Zip" placeholder="Zip/Postal Code" name="Zip">
+    
+    </div>
+    </div>
+    <div class="col-sm-offset-3 col-sm-4 pannel">
+       <div class="panel panel-default">
+          <div class="panel-body">
+            <div class="row">
+              <div class="col-sm-9">
+                <p class="pull-right">Subtotal</p>
+              </div>
+              <div class="col-sm-3">
+                <p class="pull-right" id="total1">$220.00</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-9">
+                <p class="pull-right total">Total</p>
+              </div>
+              <div class="col-sm-3">
+                <p class="pull-right totalprice" id="total">$220.00</p>
+              </div>
+            </div>
+             <div class="row">
+            <button type="submit" class="btn btn-default btn1 updatesh pull-right">Update Shoping Cart</button>
+
+          </div>
+          </div>
+          </form>
+
+          <div class="panel-footer panelfooter">
+            <p>Checkout with Multiple Addresses</p>
+          </div>
+        </div>
+       
+    </div>
+  </div>
+</div>
+
+
+<footer class="footer container-fluid" >
+  <div class="row">
+    <div class="col-sm-12 form">
+   <form class="form-inline container form" action="#">
+  <div class="form-group">
+    <label for="email">Subscribe for Newslater</label>
+    <input type="email" size="35" class="form-control" id="email" placeholder="Enter your email address">
+  </div>
+  <button type="submit" class="btn btn-default">SIGN UP</button>
+</form> 
+</div>
+</div>
+<div class="row">
+  <div class="col-sm-12">
+  <ul class="container">
+      <li>Home</li>
+      <li>About us</li>
+      <li>Register</li>
+      <li>Contact us</li>
+  </ul>
+    
+    
+  </div>
+</div>
+<hr>
+<div class="row">
+  <div class="col-sm-12 copy">
+    <p>&copy 2018 eShopper online store.All right reserved.</p>
+  </div> 
+</div>
+</footer>
+
+
+   
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html

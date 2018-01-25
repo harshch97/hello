@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Register</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body onload="enable()">
+    <header class="container-fluid">
+    <nav class="navbar navbar-inverse navbar-custom navbar-fixed-top" >
+  <div class="container">
+    <div class="row">
+    <div class="navbar-header">
+      <div class="col-sm-1">
+        <a class="navbar-brand logo" href="#"></a>
+     
+      <button type="button" class="navbar-toggle btntoggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar icontoggle"></span>
+        <span class="icon-bar icontoggle"></span>
+        <span class="icon-bar icontoggle"></span>                        
+      </button>
+    </div>
+     </div>
+    
+      
+    <div class="collapse navbar-collapse fixedmenu col-sm-5 col-xs-12" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="#" style="color: #414141;">HOME</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle menbac" data-toggle="dropdown" href="#" style="color: #414141;">MEN</a>
+          <ul class="dropdown-menu submenu">
+             <a href="#"><li>Jeans</li></a>
+            <a href="#"><li>T-shirt</li></a>
+            <a href="#"><li>Shirt</li></a>
+            <a href="#"><li>Chinos</li></a>
+            <a href="#"><li>Blazers</li></a>
+            <a href="#"><li>Night Wear</li></a>          
+          </ul>
+        </li>
+        <li><a href="#" style="color: #414141;">WOMEN</a></li>
+        <li><a href="#" style="color: #414141;">KIDS</a></li>
+        <li><a href="#" style="color: #414141;">ACCESSORIES</a></li>
+
+      </ul>
+    </div>
+   <div class="col-sm-6 col-xs-12 rightnav pull-right">
+        <ul class="nav navbar-nav navbar-right rightnav">
+        <li><a href="#" style="color: #ea4748;">Login</a></li>
+        <li><div class="seprator"></div></li>
+        <li class="cart"><a href="#"></a></li>
+       <li><div class="seprator"></div></li>
+        <li><div class="box">
+           <input class="searchtext" type="search" placeholder="Search" />
+           </div>
+           <div class="icon">
+          <a href="#"><div class="search"></div></a></div></li>
+      </ul>
+    </div>
+  </div>
+  </div>
+</nav>
+</header>
+<div class="container-fluid banner">
+    <div class="row">
+      <img src="images/inner-banner.jpg" class="img-responsive banner">  
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="row cart-bred">
+    <ul class="breadcrumb container">
+      <li class="breadcolor"><a href="#">Home</a></li>
+      <li><a href="#" class="colorbr">Register</a></li>
+    </ul>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 newcust">
+    <h2>New Customers</h2>
+  </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+    <p>By creating an account with our store you will be able to move through the checkout process faster,store multiple shipping addresses. view and track orders in your account ans more.</p>
+  </div>
+</div>
+       <form action="" method="post" id="register">
+  <div class="row">
+    <div class="col-sm-6">
+        <div class="form-group">
+          <div class="row">
+          <div class="col-sm-12">
+          <label>Username</label>
+          <input type="text" class="form-control inputborder" id="username" placeholder="Please enter your username">
+        </div>
+        <div class="col-sm-12">
+          <div id="usrwrong" class="color"></div>
+        </div>
+        </div>
+      </div>
+    </div>
+      <div class="col-sm-6">
+         <div class="form-group">
+            <div class="row">
+          <div class="col-sm-12">
+        <label>Gender</label><br>
+        <label class="radio-inline"><input type="radio" name="optradio" checked="checked">Male</label>
+        <label class="radio-inline"><input type="radio" name="optradio">Female</label> 
+    </div>
+    <div class="col-sm-12">
+          <div id="radiowrong" class="color"></div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+     <div class="row">
+    <div class="col-sm-6">
+        <div class="form-group">
+            <div class="row">
+          <div class="col-sm-12">
+        <label for="pwd">Password</label>
+        <input type="password" class="form-control inputborder validate" id="pwd" placeholder="Incorrect Password">
+      </div>
+       <div class="col-sm-12">
+          <div id="password" class="color"></div>
+        </div>
+        </div>
+      </div>
+    </div>
+  
+      <div class="col-sm-6">
+        <div class="form-group">
+           <div class="row">
+          <div class="col-sm-12">
+          <label>Email</label>
+          <input type="email" class="form-control inputborder" id="email" placeholder="Please enter valid email">
+    </div>
+
+      <div class="col-sm-12">
+          <div id="emailwrong" class="color"></div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+      <div class="row">
+    <div class="col-sm-6">
+        <div class="form-group">
+          <div class="row">
+          <div class="col-sm-12">
+          <label>First Name</label>
+          <input type="text" class="form-control inputborder" id="fname" placeholder="Please enter your first name">
+        </div>
+         <div class="col-sm-12">
+          <div id="fnamewrong" class="color"></div>
+        </div>
+        </div>
+      </div>
+    
+      </div>
+
+      <div class="col-sm-6">
+        <div class="form-group">
+           <div class="row">
+          <div class="col-sm-12">
+          <label>Mobile No.</label>
+          <input type="text" class="form-control inputborder" id="mno" placeholder="Please enter your mobile no.">
+    </div>
+
+      <div class="col-sm-12">
+          <div id="mnowrong" class="color"></div>
+        </div>
+        </div>
+      </div>
+    </div>
+      </div>
+            <div class="row">
+    <div class="col-sm-6">
+        <div class="form-group">
+           <div class="row">
+          <div class="col-sm-12">
+          <label>Last Name</label>
+          <input type="text" class="form-control inputborder" id="lname" placeholder="Please enter your last name">
+        </div>
+          <div class="col-sm-12">
+          <div id="lanmewrong" class="color"></div>
+        </div>
+        </div>
+      </div>
+    
+      </div>
+      <div class="col-sm-6">
+        <div class="form-group">
+             <div class="row">
+          <div class="col-sm-12">
+
+          <label>Phone</label>
+          <input type="text" class="form-control inputborder" id="pno" placeholder="Please enter your phone no.">
+    </div>
+      <div class="col-sm-12">
+          <div id="phone" class="color"></div>
+        </div>
+        </div>
+   
+      </div>
+
+      </div>
+    
+         
+        
+  </div>
+
+
+<div class="row container">
+    <div class="checkbox">
+      <label><input type="checkbox" value="selectall" onClick="toggle(this)">Select All</label>
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" name="chk" value="Option 1" id="ch1">Option 1</label>
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" name="chk" value="Option 2" id="ch2">Option 2</label>
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" name="chk" value="Option 3" id="ch3">Option 3</label>
+    </div>  
+      <div class="checkbox">
+      <label><input type="checkbox" value="Other" id="Other" onclick="enable()">Others&nbsp;<input type="text" id="others"  size="10px;"></label>
+    </div>
+  </div>
+
+
+      <div class="row">
+        <div class="col-sm-12 hrcolor">
+          <hr>
+        </div>
+        <div class="col-sm-6">
+            <div class="row">
+          <div class="col-sm-12">
+          <div class="checkbox">
+          <label><input type="checkbox" value="" id="Term">I Agree With Terms And Condition</label>
+          </div>
+           <div class="col-sm-12">
+          <div id="terms" class="color"></div>
+        </div>
+        </div>
+        </div>
+      </div>
+        <div class="col-sm-6">
+        <div class="pull-right">
+        <button type="submit" class="btn btn-default btn1" onclick="return validateregisterform()">Submit</button>
+        <button type="button" class="btn btn-default btn1" onclick="reset()">Clear</button>
+      </div>
+    </div>
+        
+      </div>
+    </form>
+</div>
+
+
+
+
+
+<footer class="footer container-fluid" >
+  <div class="row">
+    <div class="col-sm-12 form">
+   <form class="form-inline container form" action="#">
+  <div class="form-group">
+    <label for="email">Subscribe for Newslater</label>
+    <input type="email" size="35" class="form-control" id="email" placeholder="Enter your email address">
+  </div>
+  <button type="submit" class="btn btn-default">SIGN UP</button>
+</form> 
+</div>
+</div>
+<div class="row">
+  <div class="col-sm-12">
+  <ul class="container">
+      <li>Home</li>
+      <li>About us</li>
+      <li>Register</li>
+      <li>Contact us</li>
+  </ul>
+    
+    
+  </div>
+</div>
+<hr>
+<div class="row">
+  <div class="col-sm-12 copy">
+    <p>&copy 2018 eShopper online store.All right reserved.</p>
+  </div> 
+</div>
+</footer>
+
+
+   
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html
